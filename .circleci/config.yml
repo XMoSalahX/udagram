@@ -27,5 +27,11 @@ jobs:
           command: |
             npm run backend:build
       - run:
-          name: Deploy Back-End
+          name: Deploy Front-End
           command: npm run forntend:deploy
+      - run:
+          name: Deploy Back-End
+          command: npm run backend:deploy
+      - run:
+          name: SET-API-ENV
+          command: npm run SET-API-ENV
