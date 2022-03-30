@@ -1,10 +1,10 @@
 {
     "scripts": {
+        "SET-API-ENV": "cd udagram-api && npm run env",
         "frontend:install": "cd udagram-frontend && npm install",
         "backend:install": "cd udagram-api && npm install",
         "frontend:build": "cd udagram-frontend && npm run build",
-        "backend:build": "cd udagram-api && npm run build",
-        "SET-API-ENV": "cd udagram-api && npm run env"
+        "backend:build": "cd udagram-api && npm run build"
     },
     "devDependencies": {
         "@babel/types": "^7.17.0"
