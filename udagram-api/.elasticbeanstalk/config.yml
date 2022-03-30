@@ -1,11 +1,11 @@
 branch-defaults:
   default:
-    environment: moham
+    environment: udagram-env
     group_suffix: null
 deploy:
   artifact: www/deploy.zip
 global:
-  application_name: udagram-api3
+  application_name: udagram-api
   branch: null
   default_ec2_keyname: AKIASIAP76EGVH7DDNTZ
   default_platform: Node.js 16 running on 64bit Amazon Linux 2
