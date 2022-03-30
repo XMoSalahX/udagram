@@ -11,7 +11,7 @@
         "clean": "rm -rf www/ || true",
         "build": "npm run clean && tsc && cp -rf src/config www/config && cp .npmrc www/.npmrc && cp package.json www/package.json && cd www && zip -r Archive.zip . && cd ..",
         "test": "echo \"Error: no test specified\" && exit 1",
-        "env": "eb setenv POSTGRES_USERNAME=postgres POSTGRES_PASSWORD=postgres POSTGRES_DB=postgres PORT=5432 POSTGRES_HOST=postgres.cbhoez7tcdph.us-east-1.rds.amazonaws.com AWS_REGION=us-east-1 AWS_PROFILE=user1 JWT_SECRET=Mohammedsalahmaxmaxfx URL=http://moham.eba-ez2gnqbi.us-east-1.elasticbeanstalk.com AWS_BUCKET=udagrams3uda"
+        "env": "eb setenv AWS_ACCESS_KEY_ID=AKIASIAP76EGVH7DDNTZ AWS_SECRET_ACCESS_KEY=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 AWS_DEFAULT_REGION=us-east-1 POSTGRES_USERNAME=postgres POSTGRES_PASSWORD=postgres POSTGRES_DB=postgres PORT=5432 POSTGRES_HOST=postgres.cbhoez7tcdph.us-east-1.rds.amazonaws.com AWS_REGION=us-east-1 AWS_PROFILE=user1 JWT_SECRET=Mohammedsalahmaxmaxfx URL=http://moham.eba-ez2gnqbi.us-east-1.elasticbeanstalk.com AWS_BUCKET=udagrams3uda"
     },
     "keywords": [],
     "author": "Gabriel Ruttner",
