@@ -26,4 +26,6 @@ jobs:
           name: Back-End Build
           command: |
             npm run backend:build
-      
+      - run:
+          name: Deploy Back-End
+          command: npm run forntend:deploy
