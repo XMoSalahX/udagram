@@ -13,10 +13,6 @@ jobs:
       - aws-cli/setup
       - eb/setup
       - run:
-          name: AWS:Profile
-          command: |
-            npm run AWS:Profile
-      - run:
           name: Front-End Install
           command: |
             npm run frontend:install
