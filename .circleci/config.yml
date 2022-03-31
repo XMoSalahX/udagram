@@ -31,10 +31,13 @@ jobs:
             npm run backend:build
       - run:
           name: Deploy Front-End
-          command: npm run forntend:deploy
+          command: |
+            npm run forntend:deploy
       - run:
           name: Deploy Back-End
-          command: npm run backend:deploy
+          command: |
+            npm run backend:deploy
       - run:
           name: SET-API-ENV
-          command: npm run SET-API-ENV
+          command: |
+            npm run SET-API-ENV
