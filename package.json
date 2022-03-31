@@ -1,6 +1,5 @@
 {
     "scripts": {
-        "AWS:Profile": "bash ./bin/aws_profile.sh",
         "SET-API-ENV": "cd udagram-api && npm run env",
         "frontend:install": "cd udagram-frontend && npm install",
         "backend:install": "cd udagram-api && npm install",
@@ -9,7 +8,5 @@
         "forntend:deploy": "cd udagram-frontend && npm run deploy",
         "backend:deploy": "cd udagram-api && npm run deploy"
     },
-    "devDependencies": {
-        "@babel/types": "^7.17.0"
-    }
+    "devDependencies": {}
 }

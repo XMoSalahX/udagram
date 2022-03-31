@@ -12,7 +12,7 @@
         "build": "npm run clean && tsc && cp -rf src/config www/config && cp .npmrc www/.npmrc && cp package.json www/package.json && cd www && zip -r deploy.zip . && cd ..",
         "test": "echo \"Error: no test specified\" && exit 1",
         "env": "eb setenv POSTGRES_USERNAME=postgres POSTGRES_PASSWORD=postgres POSTGRES_DB=postgres PORT=5432 POSTGRES_HOST=postgres.cbhoez7tcdph.us-east-1.rds.amazonaws.com AWS_REGION=us-east-1 AWS_PROFILE=user5 JWT_SECRET=Mohammedsalahmaxmaxfx URL=http://udagrams3uda2.s3-website-us-east-1.amazonaws.com/ AWS_BUCKET=udagrams3uda2",
-        "deploy": "eb deploy"
+        "deploy": "eb use udagram-env --profile default && eb deploy --profile default"
 
     },
     "keywords": [],
