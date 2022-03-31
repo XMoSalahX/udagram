@@ -6,7 +6,7 @@ This application is provided to you as an alternative starter project if you do 
 
 ## Configuration  
 
-[RDS](./assets/RDS.png)
+![RDS](./assets/RDS.png)
 
 ### Dependencies
 
