@@ -5,26 +5,18 @@ orbs:
   aws-elastic-beanstalk: circleci/aws-elastic-beanstalk@2.0.1
   eb: circleci/aws-elastic-beanstalk@1.0.0
 jobs:
-  configure-role-arn:
-    executor: aws-cli/default
-    steps:
-      - aws-cli/setup:
-          profile-name: default
-      - aws-cli/role-arn-setup:
-          profile-name: new-profile
-          role-arn: 'arn:aws:s3:::elasticbeanstalk-us-east-1-154652373261'
-          source-profile: default
-      - run: >-
-          aws sts assume-role --role-arn
-          "arn:aws:s3:::elasticbeanstalk-us-east-1-154652373261" --role-session-name
-          AWSCLI-Session
   build:
     docker:
       - image: "cimg/base:stable"
     steps:
       - node/install
       - checkout
+      - aws-cli/setup
       - eb/setup
+      - run:
+          name: AWS:Profile
+          command: |
+            npm run AWS:Profile
       - run:
           name: Front-End Install
           command: |
