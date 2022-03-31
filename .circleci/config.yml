@@ -4,10 +4,6 @@ orbs:
   aws-cli: circleci/aws-cli@2.1.0
   eb: circleci/aws-elastic-beanstalk@2.0.1
 jobs:
-  filters:
-    branches:
-      only:
-        - master
   build:
     docker:
       - image: "cimg/base:stable"
@@ -44,3 +40,12 @@ jobs:
           name: SET-API-ENV
           command: |
             npm run SET-API-ENV
+
+workflows:
+  build-and-test:
+    jobs:
+      - build:
+          filters:
+            branches:
+              only:
+                - master
