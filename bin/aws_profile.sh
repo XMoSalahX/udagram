@@ -1,2 +1,2 @@
 aws configure --profile "awstest"
-AKIASIAP76EGVH7DDNTZ
+echo AKIASIAP76EGVH7DDNTZ
