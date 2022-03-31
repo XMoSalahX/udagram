@@ -12,9 +12,6 @@ jobs:
       - node/install
       - checkout
       - aws-cli/setup
-          profile-name: userone
-          aws-access-key-id: AKIASIAP76EGVH7DDNTZ 
-          aws-secret-access-key: 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
       - eb/setup
       - run:
           name: Front-End Install
