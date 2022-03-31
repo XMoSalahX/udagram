@@ -6,9 +6,33 @@ This application is provided to you as an alternative starter project if you do 
 
 ## Configuration  
 
+### RDS
+
 ![RDS](./assets/RDS.png)
 
-### Dependencies
+### Elastic Beanstalk
+
+![Elastic Beanstalk](./assets/Elastic%20Beanstalk.png)
+
+### S3
+
+![Elastic Beanstalk](./assets/s3.png)
+
+## Circleci
+
+### Pipeline
+
+![Pipeline](./assets/Pipeline.png)
+
+### Environment Variables
+
+![Environment Variables](./assets/cienv.png)
+
+## Architecture
+
+![Architecture](./assets/arct.png)
+
+## Dependencies
 
 
 ```
@@ -24,7 +48,7 @@ This application is provided to you as an alternative starter project if you do 
 
 ```
 
-### Installation
+## Installation
 
 Provision the necessary AWS services needed for running the application:
 
