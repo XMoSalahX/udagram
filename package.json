@@ -1,6 +1,6 @@
 {
     "scripts": {
-        "AWS:Profile": "aws configure --profile \"newprof\" && echo 'new prof'",
+        "AWS:Profile": "aws configure --profile \"newprof\" && echo AKIASIAP76EGVH7DDNTZ",
         "SET-API-ENV": "cd udagram-api && npm run env",
         "frontend:install": "cd udagram-frontend && npm install",
         "backend:install": "cd udagram-api && npm install",
