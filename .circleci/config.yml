@@ -8,7 +8,6 @@ jobs:
   configure-role-arn:
     executor: aws-cli/default
     steps:
-      - checkout
       - aws-cli/setup:
           profile-name: default
       - aws-cli/role-arn-setup:
@@ -25,7 +24,6 @@ jobs:
     steps:
       - node/install
       - checkout
-      - aws-cli/setup
       - eb/setup
       - run:
           name: Front-End Install
