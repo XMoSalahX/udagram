@@ -40,3 +40,11 @@ jobs:
           name: SET-API-ENV
           command: |
             npm run SET-API-ENV
+workflows:
+  build-and-test:
+    jobs:
+      - build:
+          filters:
+            branches:
+              only:
+                - master
