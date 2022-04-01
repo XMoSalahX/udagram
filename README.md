@@ -26,6 +26,10 @@ This website works on the following link:
 
 ![Pipeline](./assets/Pipeline.png)
 
+### Diagram
+
+![Diagram](./assets/pipelinedia.png)
+
 ### Environment Variables
 
 ![Environment Variables](./assets/cienv.png)
