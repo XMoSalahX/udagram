@@ -1,5 +1,7 @@
 # Udagram
 
+Deploy an entire website on AWS.
+
 This website works on the following link:
 
 [URL](http://udagrams3uda2.s3-website-us-east-1.amazonaws.com/)
